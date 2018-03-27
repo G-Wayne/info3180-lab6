@@ -28,10 +28,13 @@ Vue.component('news-list', {
     template: `
     <div class="news">
         <h2>News</h2>
-        <ul class="news__list">
-            <li v-for="article in articles" class="news__item">{{ article.title }}</li>
-          
-        </ul>
+        <div class="grid__container">
+            <div id="newsbox" v-for="article in articles" class="news__item ">
+                <h5>{{article.title}}</h5>
+                <img class="news__images" v-bind:src="article.urlToImage"/>
+                <p>{{article.description}}</p>
+            </div>
+        </div>
     </div>
     `, 
     created: function() {

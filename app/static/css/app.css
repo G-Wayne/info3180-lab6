@@ -5,3 +5,37 @@ body {
 footer  {
     padding-top: 20px;
 }
+
+.grid__container {
+    display: grid;
+	grid-template-columns: repeat(3, 300px);
+	grid-gap: 15px;
+	padding-left: 7%;
+	padding-right: 10%;
+}
+
+.news__images{
+    width: 90%;
+    height: auto;
+}
+
+.news__item{
+    border-top: solid 4px green ;
+    border-radius: 5px;
+    box-shadow: 2px 2px 15px gray;
+   
+}
+
+#newsbox{
+   padding:2%; 
+ }
+ 
+ p {
+  text-align: left;
+  padding: 5%;
+ }
+ 
+ h5 {
+    text-align: left;
+    padding: 5%;
+ }
